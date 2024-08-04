@@ -14,11 +14,10 @@ let ob = {
 ob.year = "TY";
 
 for (const key in ob) {
-  const element = ob[(key, value)];
+  const element = ob[key];
   console.log(element);
 }
 for (const v of "vedant") {
   console.log(v);
   // for an array `
-  
 }
