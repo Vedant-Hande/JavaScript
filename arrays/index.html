@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array in javascript</title>
+  </head>
+  <body>
+<!-- the thing that i learn about an array in college -->
+    <button onclick="myfun()">Try me</button>
+    <p id="demo"></p>
+    <script>
+      let arr = [10, 20, 30, 40, 50];
+      document.getElementById("demo").innerHTML = arr;
+
+      function myfun() {
+        arr.shift();
+        document.getElementById("demo").innerHTML = arr;
+      }
+    </script>
+  </body>
+</html>

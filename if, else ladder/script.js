@@ -34,9 +34,9 @@ num1 += num2;
 console.log("num1= num1+num2 : " + num1);
 
 // Conditional Operator
-// ==== is used to comp- type and number
+// === is used to comp- type and number
 if (num1 == num1) {
-  console.log("Equel");
+  console.log("Equal");
 } else if (num1 >= num2) {
   console.log("Greater");
 } else {
