@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2</title>
+  </head>
+  <body>
+    <script>
+      function mergeAndRemoveDuplicates(arr1, arr2) {
+        // Merge the two arrays
+        const mergedArray = arr1.concat(arr2);
+
+        // Use a Set to track seen ids
+        const seen = new Set();
+        const uniqueArray = [];
+
+        for (const item of mergedArray) {
+          // Assuming each item has a unique 'id' property
+          const key = item.id;
+          if (!seen.has(key)) {
+            seen.add(key);
+            uniqueArray.push(item);
+          }
+        }
+
+        return uniqueArray;
+      }
+
+      // Example usage:
+      const array1 = [
+        { id: 1, name: "Alice" },
+        { id: 2, name: "Bob" },
+      ];
+
+      const array2 = [
+        { id: 2, name: "Bob" }, // Duplicate record
+        { id: 3, name: "Charlie" },
+      ];
+
+      console.log(mergeAndRemoveDuplicates(array1, array2));
+      // Output: [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }, { id: 3, name: 'Charlie' } ]
+    </script>
+  </body>
+</html>
