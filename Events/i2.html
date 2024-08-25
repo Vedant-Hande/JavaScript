@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio and checkbox</title>
+    <style>
+      .radio {
+        background-color: aquamarine;
+        /* margin: 30px; */
+        margin: 30px auto;
+        /* padding: 30px; */
+        width: 75vw;
+        height: 25vh;
+        padding: 30px;
+        box-sizing: border-box;
+        justify-content: center;
+        border: 2px solid mediumvioletred;
+      }
+      .checkbox {
+        background-color: antiquewhite;
+        margin: 30px auto;
+        padding: 30px;
+        width: 75vw;
+        height: 25vh;
+        border: 2px solid mediumslateblue;
+        /* justify-content: flex-start; */
+        align-content: center;
+        box-sizing: border-box;
+      }
+      #submit1 {
+        color: maroon;
+        background-color: royalblue;
+        /* margin: 50px auto; */
+        box-sizing: border-box;
+        /* padding: 34px; */
+        /* align-self: center; */
+        width: 50vw;
+        height: 10vh;
+      }
+      #reset1 {
+        color: maroon;
+        background-color: royalblue;
+        /* margin: 50px auto; */
+        box-sizing: border-box;
+        /* padding: 34px; */
+        /* align-self: center; */
+        width: 50vw;
+        height: 10vh;
+      }
+
+      .submit {
+        margin: 25px auto;
+        padding: 30px;
+      }
+      .reset {
+        margin: 25px auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onreset="alert(Reset)">
+      <div class="radio">
+        <label for="r1">male</label>
+        <input type="radio" name="gender" value="r1" id="r1" />
+        <label for="r2"> Female</label>
+        <input type="radio" name="gender" value="r2" id="r2" />
+      </div>
+      <div class="checkbox">
+        <label for="c1"> you are 18 + </label>
+        <input type="checkbox" name="c1" id="c1" />
+      </div>
+      <div class="submit">
+        <input type="submit" name="submit" id="submit1" onclick="msgfun()" />
+      </div>
+      <div class="reset">
+        <input type="reset" name="reset_form" id="reset1" />
+      </div>
+    </form>
+    <script>
+      function msgfun() {
+        alert("Your Data is Submitted Sucessfully");
+        let ele = document.getElementsByName("gender");
+        // document.write(ele);
+      }
+    </script>
+  </body>
+</html>

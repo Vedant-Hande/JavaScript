@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+  </head>
+  <body>
+    <form>
+      <p id="vedant"></p>
+      <input type="button" value="Try me - " onclick="numAdd()" />
+    </form>
+    <script>
+      let num = [10, 20, 30, 40, 50];
+      function numAdd() {
+        num.unshift(1);
+        document.getElementById("vedant").innerHTML = num;
+      }
+      numAdd();
+    </script>
+  </body>
+</html>
