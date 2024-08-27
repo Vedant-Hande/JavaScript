@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Calculation</title>
+  </head>
+  <body>
+    <h1>Marks Calculation</h1>
+    <script>
+      let marks = [];
+
+      for (let i = 1; i <= 5; i++) {
+        let mark = prompt(`Enter marks for subject ${i}:`);
+        if (isNaN(mark) || mark < 0) {
+          alert("Please enter a valid non-negative number.");
+          i--; // Repeat this iteration
+        } else {
+          marks.push(mark);
+        }
+      }
+
+      // Sort marks in descending order
+      marks.sort((a, b) => b - a);
+
+      // Calculate the average using a simple method
+      let sum = 0;
+      for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+      }
+      let average = sum / marks.length;
+
+      // Display the sorted marks and average
+      console.log("Marks in Descending Order:", marks);
+      console.log("Average Marks:", average);
+    </script>
+  </body>
+</html>

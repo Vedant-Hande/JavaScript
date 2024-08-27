@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX2</title>
+  </head>
+  <body>
+    <!-- <h2>-- LOGIN FORM --</h2> -->
+    <form>
+      <input type="text" name="fnum" placeholder="Enter 1st number " />
+      <input type="text" name="snum" placeholder="Enter 2nd number" />
+      <button value="ADD" onclick="myoperation('add')">ADD</button>
+      <button value="sub" onclick="myoperation('sub')">SUB</button>
+      <input type="text" name="result" id="result" readonly />
+      <!-- <input type="button" name="Sub" value="SUB" onclick="myoperation()" /> -->
+    </form>
+    <script>
+      var result = 0;
+      function myoperation(opration) {
+        const n1 = document.getElementsByName("fnum").value;
+        const n2 = document.getElementsByName("sum").value;
+        if (opration == "add") {
+          result = n1 + n2;
+        } else if (opration == "sub") {
+          result = n1 - n2;
+        }
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </body>
+</html>
