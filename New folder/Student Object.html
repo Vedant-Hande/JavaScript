@@ -1,0 +1,20 @@
+<!-- Write JavaScript to create a object "student" with properties roll number name, branch, 
+year. Delete branch property and display remaining properties of student object. -->
+<html>
+    <head>
+        <script>
+            var student={roll_no:"10",name:"Brenden",branch:"IT",year:"2012"}
+            document.write("*****Before Deleting*****"+"<br>")
+            for(i in student)
+            {
+                document.write(i+"="+student[i]+"<br>")
+            }
+            delete student.branch;
+            document.write("*****After Deleting*****"+"<br>")
+            for(i in student)
+            {
+                document.write(i+"="+student[i]+"<br>")
+            }
+        </script>
+    </head>
+</html>

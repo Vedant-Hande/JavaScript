@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script language="javascript">
+      var Student = [
+        [70, "Amit"],
+        [78, "Sumit"],
+        [71, "Abhishiek"],
+      ];
+      var avg = 0;
+      for (i = 0; i < Student.length; i++) {
+        for (j = i + 1; j < Student.length; j++) {
+          if (Student[i] > Student[j]) {
+            temp = Student[i];
+            Student[i] = Student[j];
+            Student[j] = temp;
+          }
+        }
+      }
+      for (i = 0; i < Student.length; i++) {
+        avg += Student[i][0];
+        document.write(Student[i] + "<br>");
+      }
+      document.write("<br><br>");
+      document.write("Avg Marks of Students:" + avg / Student.length);
+    </script>
+  </body>
+</html>

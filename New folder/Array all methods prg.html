@@ -1,0 +1,51 @@
+<html>
+  <body>
+    <script language="javascript" type="text/javascript">
+      var arr = new Array(10, 20, 30, 40);
+      document.write("<br>Array elements:" + arr);
+      arr.push(50, 60);
+      document.write("<br>Array elements by pushing 50 and 60 at end:" + arr);
+
+      arr.unshift(100, 200);
+      document.write(
+        "<br>Array elements by adding 100 200 at beginning:" + arr
+      );
+
+      document.write("<br>Index of 20 is:" + arr.indexOf(20));
+
+      arr.sort(function (a, b) {
+        return a - b;
+      });
+      document.write("<br>Array elements in ascending order:" + arr);
+
+      arr.sort(function (a, b) {
+        return b - a;
+      });
+      document.write("<br>Array elements in descending order:" + arr);
+
+      document.write("<br>Element at 1st index:" + arr[1]);
+
+      arr.pop();
+      document.write("<br>Array elements after using pop method:" + arr);
+
+      arr.shift();
+      document.write("<br>Array elements after using shift method:" + arr);
+
+      arr.splice(1, 2, "A", "B");
+      document.write("<br>Array elements after using splice method:" + arr);
+
+      document.write("<br>Array elements from 2 to 5 index:" + arr.slice(2, 6));
+
+      document.write(
+        "<br>No greater than 20 using find method:" +
+          arr.find(function (no) {
+            return no > 20;
+          })
+      );
+
+      let index = arr.findIndex((element) => element === "A");
+      //let index=arr.findIndex(function(element){return element==='A'} );
+      document.write("<br>Find index of element equal to 'A':" + index);
+    </script>
+  </body>
+</html>

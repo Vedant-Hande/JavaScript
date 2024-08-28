@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form name="f1" >
+            Enter Name: <input type="text" id="t1" name="t1"><br><br>
+            Enter Email Id: <input type="text" id="t2" name="t2"><br><br>
+            <input type="button" onclick="validate()" value="Validate">
+        </form>
+        <script>
+            function validate() {
+                var name = document.getElementById("t1").value;
+                var email = document.getElementById("t2").value;
+
+                if (name === "") {
+                    alert("Please Enter name");
+                } else {
+                    alert("Correct Name");
+                    document.f1.t1.style.backgroundColor = "green";
+                }
+
+                if (email === "" || email.indexOf(".") < 1 || email.indexOf("@") < 1) {
+                    alert("Please provide valid email address");
+                } else {
+                    alert("Correct Email address");
+                    document.f1.t2.style.backgroundColor = "green";
+                }
+            }
+        </script>
+    </body>
+</html>

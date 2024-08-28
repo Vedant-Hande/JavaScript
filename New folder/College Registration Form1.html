@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>College Registration Form</title>
+  </head>
+  <body>
+    <form name="form1" onsubmit="subForm()">
+      <h2>College Registration Form</h2>
+      Enter First Name:
+      <input type="text" id="t1" placeholder="Enter first name" /><br /><br />
+      Enter Middle Name:
+      <input type="text" id="t2" placeholder="Enter middle name" /><br /><br />
+      Enter Last Name:
+      <input type="text" id="t3" placeholder="Enter last name" /><br /><br />
+      Gender: <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female<br /><br />
+      Mobile No: <input type="number" name="mobno" /><br /><br />
+      Date of Birth: <input type="date" name="dob" /><br /><br />
+      Email: <input type="email" name="email" /><br /><br />
+      Nationality: <input type="text" name="country" /><br /><br />
+      Address: <textarea id="ta1" name="address" rows="4" cols="50"></textarea
+      ><br /><br />
+      Course: <input type="radio" />IT <input type="radio" />Comp
+      <input type="radio" />E&TC <br /><br />
+      Year:
+      <select>
+        <option value="1st year">1st year<br /></option>
+        <option value="2nd year">2nd year<br /></option>
+        <option value="3rd year">3rd year<br /></option></select
+      ><br /><br />
+      <center>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </center>
+    </form>
+    <script>
+      function subForm() {
+        window.alert("Registration Successful !!");
+      }
+    </script>
+  </body>
+  <html></html>
+</html>

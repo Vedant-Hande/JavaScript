@@ -1,0 +1,21 @@
+<!--Convert string to no and vise versa-->
+<html>
+  <body>
+    <script language="javascript">
+      str1 = prompt("Enter a Integer number:");
+      str2 = prompt("Enter a FLoat number");
+      str3 = prompt("ENter a Numeric value:");
+      var no1 = parseInt(str1);
+      document.write("Integer=" + no1);
+      var no2 = parseFloat(str2);
+      document.write("<br>Float=" + no2);
+      var no3 = Number(str3);
+      document.write("<br>Number=" + no3);
+
+      let str4 = no1.toString();
+      let str5 = no3 + "";
+      document.write("<br>String using toString method=" + str4);
+      document.write('<br>String using no+"" method:' + str5);
+    </script>
+  </body>
+</html>

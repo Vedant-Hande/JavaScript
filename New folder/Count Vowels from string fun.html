@@ -1,0 +1,52 @@
+<!-- Write a JavaScript function to count the number of vowels in a given string -->
+<html>
+    <body>
+        <script>
+            var str="America";
+            var count=0;
+            function countVowel()
+            {
+                var str2=str.split("");
+                for (i in str2)
+                {
+                    document.write(str2[i]);
+                    switch(str2[i])
+                    {
+                        case "a":                                   
+                        case "e":                                   
+                        case "i":                                   
+                        case "o":                                   
+                        case "u":                                   
+                        case "A":                                   
+                        case "E":                                   
+                        case "I":                                   
+                        case "O":
+                        case "U":   count++;                               
+                                    break;
+                    }
+                }
+                return count;
+            }
+            count=countVowel();
+            document.write("<br>No of Vowels in String:"+count);
+        </script> 
+        <!-- <script>
+                const string = prompt("enter String")
+                let vowels = 0;
+                for (let i = 0; i < string.length; i++)
+                {
+                    switch (string[i]) 
+                    {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u':
+                        vowels++
+                        break;
+                    }
+                }
+                document.write(vowels)
+           </script> -->
+    </body>
+</html>

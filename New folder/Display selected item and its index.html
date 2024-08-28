@@ -1,0 +1,22 @@
+<!--Display item name and index from select box on button click-->
+<html>
+<body>
+		<select id="fruit">
+			<option value="Mango">Mango</option>
+			<option value="Banana">Banana</option>
+			<option value="Apple">Apple</option>
+		</select><br><br>
+	
+	<button onclick="displayitem()">Item Name and Index</button>
+	<script language="javascript" type="text/javascript" >
+
+		function displayitem() 
+        {
+			ind=fruit.selectedIndex;
+            item = fruit.options[ind].value;
+			alert("Selected Item:"+item+"\nSelected Index:"+ind);
+        }
+        
+   	</script>
+</body>
+</html>

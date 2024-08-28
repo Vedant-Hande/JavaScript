@@ -1,0 +1,49 @@
+<html>
+  <body>
+    <form name="form1">
+      Enter your Vehicle:
+      <input
+        type="checkbox"
+        name="c1"
+        id="c1"
+        value="Bike"
+        onchange="display1()" />Bike
+      <input
+        type="checkbox"
+        name="c1"
+        id="c2"
+        value="Car"
+        onchange="display2()" />Car
+      <input
+        type="checkbox"
+        name="c1"
+        id="c3"
+        value="Bus"
+        onchange="display3()" />Bus
+      <input
+        type="checkbox"
+        name="c1"
+        id="c4"
+        value="Bicycle"
+        onchange="display4()" />Bicycle
+    </form>
+    <script>
+      function display1() {
+        var vehicle1 = document.getElementById("c1").value;
+        alert("Your Vehicle:" + vehicle1);
+      }
+      function display2() {
+        var vehicle1 = document.getElementById("c2").value;
+        alert("Your Vehicle:" + vehicle1);
+      }
+      function display3() {
+        var vehicle1 = document.getElementById("c3").value;
+        alert("Your Vehicle:" + vehicle1);
+      }
+      function display4() {
+        var vehicle1 = document.getElementById("c4").value;
+        alert("Your Vehicle:" + vehicle1);
+      }
+    </script>
+  </body>
+</html>

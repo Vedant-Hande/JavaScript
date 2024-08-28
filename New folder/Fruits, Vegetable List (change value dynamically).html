@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <form name="form1">
+            List:
+            <select name="list1" value="s1" size="7">
+                <option value="Mango">Mango</option>
+                <option value="Banana">Banana</option>
+                <option value="Rose Apple">Rose Apple</option>
+                <option value="Tomata">Tomato</option>
+                <option value="Potato">Potato</option>
+                <option value="Cabbage">Cabbage</option>
+            </select><br><br>
+            Select:
+            <input type="radio" name="grp1" value="Fruits" onclick="update(this.value)">Fruits
+            <input type="radio" name="grp1" value="Vegetable" onclick="update(this.value)">Vegetable <br><br>
+            <input type="reset" value="Reset" name="reset">
+        </form>
+        <script language="javascript" type="text/javascript">
+            function update(Elementvalue)
+            {
+                with(document.forms.form1)
+                {
+                    if(Elementvalue=="Fruits")
+                    {
+                        list1[0].text="Mango";
+                        list1[1].text="Banana";
+                        list1[2].text="Rose Apple";
+                        list1[3].text="";
+                        list1[4].text="";
+                        list1[5].text="";
+                    }
+                    else 
+                    {
+                        list1[0].text="Tomata";
+                        list1[1].text="Potato";
+                        list1[2].text="Cabbage";
+                        list1[3].text="";
+                        list1[4].text="";
+                        list1[5].text="";  
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

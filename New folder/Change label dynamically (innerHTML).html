@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <form name="form1">
+      Select State:
+      <select id="s1" name="states" onchange="display()">
+        <option value="New Delhi">New Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Banglore">Banglore</option></select
+      ><br /><br />
+      <p id="p1"></p>
+    </form>
+    <script>
+      function display() {
+        var state = document.getElementById("s1").value;
+        // alert(state);
+        document.getElementById("p1").innerHTML = "Selected State:" + state;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!--Write HTML Script that displays textboxes for accepting Name, middlename, Surname of the user 
+and a Submit button. Write proper JavaScript such that when the user clicks on submit button i) all 
+texboxes must get disabled and change the color to “RED”. and with respective labels. 3 ii) Constructs 
+the mailID as .@msbte.com and displays mail ID as message. (Ex. If user enters Rajni as name and 
+Pathak as surname mailID will be constructed as rajni.pathak@msbte.com)-->
+<html>
+  <head>
+    <script>
+      function setEmail() {
+        document.forms.form1.fname.style.backgroundColor = "red";
+        document.forms.form1.fname.disabled = true;
+        document.forms.form1.mname.style.backgroundColor = "red";
+        document.forms.form1.mname.disabled = true;
+        document.forms.form1.lname.style.backgroundColor = "red";
+        document.forms.form1.lname.disabled = true;
+
+        // var firstname=document.getElementById("tf1").value;
+        // var lastname=document.getElementById("tf3").value;
+        var firstname = document.forms[0].fname.value;
+        var lastname = document.forms[0].lname.value;
+
+        alert(
+          "Your mail is:\n" +
+            firstname.toLowerCase() +
+            lastname.toLowerCase() +
+            "@msbte.com"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <form name="form1">
+      Enter First Name:<input
+        type="text"
+        name="fname"
+        value=""
+        id="tf1"
+        required /><br /><br />
+      Enter Middle Name:<input
+        type="text"
+        name="mname"
+        id="tf2"
+        required /><br /><br />
+      Enter Last Name:<input
+        type="text"
+        name="lname"
+        value=""
+        id="tf3"
+        required /><br /><br />
+      <input type="button" value="Submit" onclick="setEmail()" />
+    </form>
+  </body>
+</html>

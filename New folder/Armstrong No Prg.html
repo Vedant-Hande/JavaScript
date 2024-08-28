@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script language="javascript">
+      function display() {
+        var rem = 0,
+          sum = 0;
+        let no = parseInt(document.getElementById("t1").value);
+        let temp = no;
+        while (no > 0) {
+          rem = no % 10;
+          sum += rem * rem * rem;
+          no = Math.floor(no / 10);
+        }
+        if (temp == sum) alert("No is Armstrong:" + temp);
+        else alert("No is not an Armstrong");
+      }
+    </script>
+  </head>
+  <body>
+    Enter Number:<input type="text" id="t1" />
+    <button onclick="display()">Check Armstrong No</button>
+  </body>
+</html>

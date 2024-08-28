@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <script>
+      var sum = 0;
+      var student = ["Suraj", "Salman", "Jeevan", "Jayesh", "Vinay"];
+      var marks = [97, 89, 67, 59, 90];
+      for (i = 0; i < marks.length; i++) {
+        sum = sum + marks[i];
+      }
+      var avg = parseInt(sum / marks.length);
+      document.write("Average Percentage:" + avg + "<br>");
+      if (avg < 60) document.write("Avg Percent result is E");
+      else if (avg < 70) document.write("Avg Percent result is D");
+      else if (avg < 80) document.write("Avg Percent result is C");
+      else if (avg < 90) document.write("Avg Percent result is B");
+      else if (avg < 100) document.write("Avg Percent result is A");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            function Palindrome(str)
+            {
+                revstr=str.split("").reverse().join("");
+                document.write("Reverse String:"+revstr);
+                if(revstr==str)
+                    document.write("<br>String is palindrome : "+revstr);
+                else
+                    document.write("<br>String is not Palindrome : "+revstr);
+            }
+            var str="racecar";
+            //temp=str;
+            Palindrome(str);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      var no1, no2, res, ch;
+      no1 = parseInt(prompt("Enter first number:"));
+      no2 = parseInt(prompt("Enter second number:"));
+      ch = prompt(
+        "Arithmetic Operations \n 1.ADD \n 2.Substract \n 3.Multiply \n 4.Divide \n Enter your choice:"
+      );
+      switch (ch) {
+        case "1":
+          res = no1 + no2;
+          document.write("Addition=" + res);
+          break;
+        case "2":
+          res = no1 - no2;
+          document.write("Substraction=" + res);
+          break;
+        case "3":
+          res = no1 * no2;
+          document.write("Multiplication=" + res);
+          break;
+        case "4":
+          div = no1 / no2;
+          document.write("Division=" + div);
+          break;
+        default:
+          document.writeln("Invalid Choice Please Enter valid choice");
+      }
+    </script>
+  </body>
+</html>

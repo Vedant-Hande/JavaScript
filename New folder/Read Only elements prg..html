@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function readonlyfunction()
+        {
+            document.forms.form1.t1.readOnly=true;
+            alert("read only function called");
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <input type="text" name="t1"><br><br>
+        <input type="button" onclick="readonlyfunction()" id="b1" value="readOnly Value">
+    </form>
+</body>
+</html>

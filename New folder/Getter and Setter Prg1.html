@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        var car={
+            Brand:"Suzuki",Name:'Swift',
+            set setBrand(brand)
+            {
+                this.Brand=brand;
+            },
+            set setName(name)
+            {
+                this.Name=name;
+            },
+            get getCarProperties()
+            {
+                return this.Brand;
+                return this.Name;
+            }
+        }
+        document.write("Car Name:"+car.Name+" Car Brand:"+car.Brand+"<br>");
+        car.setBrand='Tata';
+        car.setName='Safari';
+        document.write("Car Name:"+car.Name+" Car Brand:"+car.Brand+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

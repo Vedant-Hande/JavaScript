@@ -1,0 +1,45 @@
+<!-- Write HTML Script that displays dropdownlist containing options NewDelhi, Mumbai, Bangalore. Write proper JavaScript such that when the user selects any options corresponding description of about 20 words and image of the city appear in table which appears below on the same page.  -->
+<html>
+    <body>
+        <form name="form1">
+            Select City:
+            <select id="s1" onchange="displayImg()">
+                <option id="o1" value="Mumbai">Mumbai</option>
+                <option id="o2" value="Banglore">Banglore</option>
+                <option id="o2" value="New Delhi">New Delhi</option>
+            </select><br><br>
+            <table border="1">
+                <tr>
+                    <td>
+                        <img id="img1" src="">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="t1"> </td>
+                </tr>
+            </table>
+        </form>
+        <script language="JavaScript">
+            function displayImg()
+            {
+                var image=document.getElementById("s1").value;
+                if(image=="Mumbai")
+                {
+                    document.getElementById("img1").src="https://th.bing.com/th?id=OIP.7j2iZyeTXeA0wpzzb8E_-AHaI3&w=228&h=273&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2";
+                    document.getElementById("t1").innerHTML="You selected Mumbai and it is capital of Maharashtra";
+                }
+                else if(image=="Banglore")
+                {
+                    document.getElementById("img1").src="https://th.bing.com/th?id=OIP.BoMn2IUfvURQHyi_moQcUAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2";
+                    document.getElementById("t1").innerHTML="You selected Banglore and it is capital of Karnataka";
+                }
+                else
+                {
+                    document.getElementById("img1").src="https://th.bing.com/th?id=OIP.nolG_jwRXPmDOY5FxtYKqgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2";
+                    document.getElementById("t1").innerHTML="You selected New Delhi and it is capital of India";
+                }
+            }
+                
+        </script>
+    </body>
+</html>

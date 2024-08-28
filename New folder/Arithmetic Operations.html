@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <script language="Marathi" type="text/javascript">
+      var a = parseInt(prompt("Enter first no:"));
+      var b = parseInt(prompt("Enter second No:"));
+      var ch = parseInt(
+        prompt(
+          "1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Remainder\nEnter your choice:"
+        )
+      );
+      let c;
+      switch (ch) {
+        case 1:
+          c = a + b;
+          document.write("Addition=" + c);
+          break;
+        case 2:
+          c = a - b;
+          document.write("Substraction=" + c);
+          break;
+        case 3:
+          c = a * b;
+          document.write("Multiplication=" + c);
+          break;
+        case 4:
+          c = a / b;
+          document.write("Division=" + c);
+          break;
+        case 5:
+          c = a % b;
+          document.write("Remainder=" + c);
+          break;
+        default:
+          document.write("Invalid choice Please enter correct choice");
+      }
+    </script>
+  </body>
+</html>

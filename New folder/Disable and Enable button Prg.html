@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <button onclick="display1()" id="b1" disabled>Enable Me</button><br /><br />
+    <button onclick="display2()" id="b2">Disable Me</button>
+  </body>
+  <script language="JavaScript" type="text/JavaScript">
+    function display1()
+    {
+        var b1=document.getElementById("b1").disabled=true;
+        b1.textContent="Enable Me";
+        var b2=document.getElementById("b2").disabled=false;
+        b2.innerHTML="Disable Me";
+    }
+    function display2()
+    {
+        var b2=document.getElementById("b2").disabled=true;
+        b2.innerHTML="Enable Me";
+        document.getElementById("b1").disabled=false;
+        b1.textContent="Disable Me";
+    }
+  </script>
+</html>

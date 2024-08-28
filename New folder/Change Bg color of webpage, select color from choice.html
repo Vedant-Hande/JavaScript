@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <form name="form1">
+      Select Color:
+      <select name="list1" onchange="setcolor(this.value)">
+        <option value="cyan">Cyan</option>
+        <option value="green">Green</option>
+        <option value="grey">Grey</option>
+      </select>
+    </form>
+    <script language="javascript">
+      function setcolor(selectedColor) {
+        if (selectedColor == "cyan")
+          document.body.style.backgroundColor = "cyan";
+        else if (selectedColor == "green")
+          document.body.style.backgroundColor = "green";
+        else if (selectedColor == "grey")
+          document.body.style.backgroundColor = "grey";
+      }
+    </script>
+  </body>
+</html>

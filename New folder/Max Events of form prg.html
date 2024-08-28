@@ -1,0 +1,41 @@
+<html>
+    <body onload="fun1()">
+        <form name="form1">
+            <button name="b1" value="onclick" onclick="fun2()">Onclick Event</button>
+            <button name="b2" value="ondblclick" ondblclick="fun3()">Ondblclick Event</button><br><br>
+            <select name="s1" onchange="fun4(this.value)">
+                <option name="o1" value="Apple">Apple</option>
+                <option name="o2" value="Banana">Banana</option>
+                <option name="o3" value="Mango">Mango</option>
+            </select>  <br><br>     
+            <input type="text" name="t1" onselect="fun5()" onfocus="fun6()"><br>
+            <p id="p1"></p>
+        </form>
+        <script>
+            function fun1()
+            {
+                window.alert("Onload Event occur");
+            }
+            function fun2()
+            {
+                window.alert("Onclick event occur");
+            }
+            function fun3()
+            {
+                window.alert("Ondblclick Event occur");
+            }
+            function fun4(element)
+            {
+                window.alert("You selected:"+element);
+            }
+            function fun5(element)
+            {
+                window.alert("You selected some text from textfield");
+            }
+            function fun6()
+            {
+                document.getElementById("p1").innerHTML="Use only capital letters";
+            }
+        </script>
+    </body>
+</html>

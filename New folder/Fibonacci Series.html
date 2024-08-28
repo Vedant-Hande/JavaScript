@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            const limit=parseInt(prompt("Enter limit:"));
+            var fno=0,sno=1,tno=0;
+            document.write("Fibonacci Series:<br>");
+            document.write(fno+" "+sno+" ");
+            for(var i=2;i<limit;i++)
+            {
+                tno=fno+sno;
+                document.writeln(tno);
+                fno=sno;
+                sno=tno;
+            }
+        </script>
+    </body>
+</html>

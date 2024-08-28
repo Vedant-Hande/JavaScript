@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Check Prime No Prg</title>
+  </head>
+  <body>
+    <script>
+      var no = prompt("Enter any number");
+      var flag = 0;
+      if (no > 2) {
+        for (var i = 2; i < no; i++) {
+          if (no % i == 0) {
+            flag = 1;
+            break;
+          }
+        }
+        if (flag == 0) document.write("Number is Prime");
+        else document.write("Number is not Prime");
+      } else document.write("Number is Neither Prime nor composite");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Selector</title>
+</head>
+<body>
+    <h1>Image Selector</h1>
+    <label for="imageSelect">Select an image:</label>
+    <select id="imageSelect">
+        <option value="1.jpg">Image 1</option>
+        <option value="2.jpg">Image 2</option>
+        <option value="3.jpg">Image 3</option>
+    </select>
+    <button id="displayButton" onclick="displayImage()">Display Image</button>
+
+    <script>
+        function displayImage() 
+        {
+            let selectedValue = document.getElementById("imageSelect").value;
+            window.open(selectedValue,"_blank")
+        }
+    </script>
+</body>
+</html>
