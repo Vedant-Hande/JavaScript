@@ -60,7 +60,7 @@
     </style>
   </head>
   <body>
-    <form onreset="alert(Reset)">
+    <form>
       <div class="radio">
         <label for="r1">male</label>
         <input type="radio" name="gender" value="r1" id="r1" />
@@ -75,14 +75,15 @@
         <input type="submit" name="submit" id="submit1" onclick="msgfun()" />
       </div>
       <div class="reset">
-        <input type="reset" name="reset_form" id="reset1" />
+        <input type="reset" name="reset_form" id="reset1" onreset="fun()" />
       </div>
     </form>
     <script>
       function msgfun() {
         alert("Your Data is Submitted Sucessfully");
-        let ele = document.getElementsByName("gender");
-        // document.write(ele);
+      }
+      function fun() {
+        alert("RESET");
       }
     </script>
   </body>
