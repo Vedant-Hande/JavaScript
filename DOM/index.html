@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JS</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 34px;
+        margin: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <div class="box">box1</div>
+      <div class="box">bo2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+    <script>
+      // script is avalible into  the last file and output is also into it so i don't t is to confuse  is the Browser code ... ;
+    </script>
+  </body>
+</html>
+
+<!-- 
+doc
+VM1703:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1703:1Understand this error
+document.body
+<body data-liner-extension-version=​"7.15.8">​…​</body>​
+document.body.childNodes
+NodeList(18) [text, div, text, script, text, comment, text, script, text, style.L-GoogleBookmarkOptOut, style.L-GooglePBLOptOut, style.L-YoutubeBookmarkOptOut, style.L-YoutubeHighlightOptOut, style.L-YoutubePBLOptOut, style.L-PDFCopilotOptOut, div.liner-scroll-points-container, div.LImageHighlighter.LImageHighlighter__optOut, style.L-V6]
+        document.body.firstChild
+#text
+document.body.childNodes
+NodeList(18) [text, div, text, script, text, comment, text, script, text, style.L-GoogleBookmarkOptOut, style.L-GooglePBLOptOut, style.L-YoutubeBookmarkOptOut, style.L-YoutubeHighlightOptOut, style.L-YoutubePBLOptOut, style.L-PDFCopilotOptOut, div.liner-scroll-points-container, div.LImageHighlighter.LImageHighlighter__optOut, style.L-V6]0: text1: div2: text3: script4: text5: comment6: text7: script8: text9: style.L-GoogleBookmarkOptOut10: style.L-GooglePBLOptOut11: style.L-YoutubeBookmarkOptOut12: style.L-YoutubeHighlightOptOut13: style.L-YoutubePBLOptOut14: style.L-PDFCopilotOptOut15: div.liner-scroll-points-container16: div.LImageHighlighter.LImageHighlighter__optOut17: style.L-V6length: 18[[Prototype]]: NodeList
+document.body.children
+HTMLCollection(12) [div, script, script, style.L-GoogleBookmarkOptOut, style.L-GooglePBLOptOut, style.L-YoutubeBookmarkOptOut, style.L-YoutubeHighlightOptOut, style.L-YoutubePBLOptOut, style.L-PDFCopilotOptOut, div.liner-scroll-points-container, div.LImageHighlighter.LImageHighlighter__optOut, style.L-V6]
+document.body.firstChild.ch
+undefined
+document.body.firstChild.childNodes
+NodeList []
+document.body.firstElementChild.childNodes
+NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+document.body.firstElementChild.childrem
+undefined
+document.body.firstElementChild.children
+HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+document.body.firstElementChild.children[1]
+<div class=​"box">​bo2​</div>​
+document.body.firstElementChild.children[1].previousSibling
+#text
+document.body.firstElementChild.children[1].previousElementSibling
+<div class=​"box">​box1​</div>​
+document.body.firstElementChild.children[1].nextSibling
+#text
+document.body.firstElementChild.children[1].nextElementSibling
+<div class=​"box">​box3​</div>​
+document.body.lastElementChild.children[1].previousElementSibling
+VM2211:1 Uncaught TypeError: Cannot read properties of undefined (reading 'previousElementSibling')
+    at <anonymous>:1:44
+(anonymous) @ VM2211:1Understand this error
+document.body.lastElementChild.children
+HTMLCollection []
+document.body.lastElementChild
+<style type=​"text/​css" class=​"L-V6">​…​</style>​
+document.body.lastChild
+<style type=​"text/​css" class=​"L-V6">​…​</style>​
+document.body.lastChild.childElementCount
+0
+document.head.childElementCount
+6
+document.head.title("vedant hande");
+VM2502:1 Uncaught TypeError: document.head.title is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM2502:1Understand this error
+document.body.title("vedant hande");
+VM2518:1 Uncaught TypeError: document.body.title is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM2518:1Understand this error
+document.body.title("vedant hande")
+VM2524:1 Uncaught TypeError: document.body.title is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM2524:1Understand this error
+document.body.firstChild.COMMENT_NODE 
+8
+document.body.firstElementChild.children[3].nextElementSibling
+<div class=​"box">​box5​</div>​
+document.body.firstElementChild.children[3].previousElementSibling
+<div class=​"box">​box3​</div>​
+document.body.firstElementChild.children[3]
+<div class=​"box">​box4​</div>​
+document.body.firstElementChild.children[3].previousSibling
+#text
+document.body.firstElementChild.children[3].previousElementSibling.style.backgroundColor='red'
+'red'
+document.body.lastElementChild.children[3].previousElementSibling.style.backgroundColor='red'
+VM2796:1 Uncaught TypeError: Cannot read properties of undefined (reading 'previousElementSibling')
+    at <anonymous>:1:44
+(anonymous) @ VM2796:1Understand this error
+document.body.lastElementChild.children.previousElementSibling.style.backgroundColor='red'
+VM2804:1 Uncaught TypeError: Cannot read properties of undefined (reading 'style')
+    at <anonymous>:1:64
+(anonymous) @ VM2804:1Understand this error
+document.body.lastElementChild.children.previousElementSibling.style.backgroundColor='red'
+VM2810:1 Uncaught TypeError: Cannot read properties of undefined (reading 'style')
+    at <anonymous>:1:64
+(anonymous) @ VM2810:1Understand this error
+document.body.firstElementChild.children[2].nextElementSibling.style.backgroundColor='green'
+'green' -->
