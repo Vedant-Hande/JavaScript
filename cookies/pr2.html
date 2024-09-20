@@ -1,0 +1,22 @@
+<!-- JavaScript Program to set and get cookie -->
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h2>JavaScript Program to set and get cookie</h2>
+    <input type="button" value="setCookie" onclick="setCookie()" />
+    <input type="button" value="getCookie" onclick="getCookie()" />
+    <script>
+      function setCookie() {
+        document.cookie = "username= VEDANT";
+      }
+      function getCookie() {
+        if (document.cookie.length != 0) {
+          alert("Cookie = " + document.cookie);
+        } else {
+          alert("Cookie not available");
+        }
+      }
+    </script>
+  </body>
+</html>
