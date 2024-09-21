@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script>
+      function WriteCookie() {
+        var now = new Date();
+        now.setMonth(now.getMonth() + 1);
+        cookievalue = document.myform.customer.value + ";";
+        document.cookie = "name=" + cookievalue;
+        document.cookie =
+          "expires=" +
+          now.toUTCString() +
+          "  " +
+          document.write("SettingCookies : " + "name = " + cookievalue);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript Program to display cookies by setcookie Method.</h2>
+    <form name="myform" action="">
+      Enter name: <input type="text" name="customer" />
+      <input type="button" value="Set Cookie" onclick="WriteCookie()" />
+    </form>
+  </body>
+</html>
