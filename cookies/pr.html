@@ -1,0 +1,27 @@
+<!-- JavaScript Program to delete a cookie by providing expiry date (i.e. any past
+date) -->
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h2>
+      JavaScript Program to delete a cookie by providing expiry date (i.e. any
+      past date)
+    </h2>
+    <input type="button" value="Set Cookie" onclick="setCookie()" />
+    <input type="button" value="Get Cookie" onclick="getCookie()" />
+    <script>
+      function setCookie() {
+        document.cookie =
+          "Friend_name= Prathamesh  ; expires=Sun, 23 sept 2024 12:00:00 UTC";
+      }
+      function getCookie() {
+        if (document.cookie.length != 0) {
+          alert(document.cookie);
+        } else {
+          alert("Cookie not avaliable");
+        }
+      }
+    </script>
+  </body>
+</html>
