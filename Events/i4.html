@@ -1,39 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>onblur & onSelect</title>
-    <style>
-      * {
-        padding: 23px;
-        margin: -12px;
-        /* justify-content: center; */
-      }
-      .events {
-        display: flex;
-        /* justify-content: center; */
-      }
-    </style>
-  </head>
+<html>
   <body>
     <form>
-      <div class="events">
-        <div>
-          <label for="eyn">Enter Your Name : </label>
-          <input type="text" name="name" id="eyn" onselect="mySelect()" />
-        </div>
-        <div>
-          <label for="eyp">Enter Your Password : </label>
-          <input type="password" name="password" id="eyp" onblur="myBlur()" />
-        </div>
-      </div>
+      Enter Your Name :
+      <input type="text" name="name" id="eyn" onselect="mySelect()" />
+
+      Enter Your Password :
+      <input type="password" name="password" id="eyp" onblur="myBlur()" />
     </form>
     <script>
       function myBlur() {
         alert("onblur event occurs !");
       }
-
       function mySelect() {
         alert("onSelect event occrs ");
       }

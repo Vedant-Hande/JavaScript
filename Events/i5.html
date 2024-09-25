@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <body>
+    <div id="clock">00:00:00</div>
+    <form>
+      <button type="button" id="startButton">START</button>
+      <button type="button" id="stopButton">STOP</button>
+    </form>
+    <script>
+      let intervalId;
+      function startClock() {
+          const clockElement = document.getElementById("clock");
+          intervalId = setInterval(() => {
+              const now = new Date();
+              const hours = String(now.getHours()).padStart(2, '0');
+              const minutes = String(now.getMinutes()).padStart(2, '0');
+              const seconds = String(now.getSeconds()).padStart(2, '0');
+              clockElement.textContent = ${hours}:${minutes}:${seconds};
+          }, 1000);
+      }
+      function stopClock() {
+          clearInterval(intervalId);
+      }
+      document.getElementById("startButton").addEventListener("click", () => {
+          if (!intervalId) {
+              startClock();
+          }
+      });
+      document.getElementById("stopButton").addEventListener("click", () => {
+          stopClock();
+      });
+    </script>
+  </body>
+</html>
