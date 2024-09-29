@@ -18,6 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #232427;
+
   border-radius: 8px;
   box-shadow: -3px -2px 151px 12px rgba(255, 1, 153, 1);
 }
@@ -35,7 +36,6 @@ body {
 .main #logo i {
   margin-right: 15px;
 }
-
 /* left & right part */
 .left {
   width: 50%;
