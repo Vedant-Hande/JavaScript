@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #1a0942, #310d40);
+  background: rgb(255, 0, 162);
 }
 html {
   font-size: 16px;
@@ -23,6 +23,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 2vmin;
+  /* border: 2px solid black; */
 }
 .button-option {
   background: #ffffff;
@@ -31,8 +32,8 @@ html {
   border: none;
   border-radius: 8px;
   font-size: 12vmin;
-  color: #d161ff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #00c4fa;
+  box-shadow: rgb(25, 0, 255);
 }
 #restart {
   font-size: 1.3em;
@@ -44,6 +45,7 @@ html {
   position: relative;
   margin: 1.5em auto 0 auto;
   display: block;
+  box-shadow: rgb(0, 191, 255);
 }
 .popup {
   background: linear-gradient(135deg, #8052ec, #d161ff);
