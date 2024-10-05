@@ -1,2 +1,2 @@
-let a1 = document.getElementById("box");
-console.log(a1);
+let e = document.getElementsByClassName("box");
+console.log(e);
